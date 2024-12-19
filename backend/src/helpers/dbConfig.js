@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+const { DB_URI } = require("../config/index");
 
 // connect to mongo db database
 const connectDb = async () => {
   await mongoose
-    .connect("mongodb://localhost:27017/blog-api2")
+    .connect(DB_URI)
     .then(() => console.log("database connected"))
     .catch((error) => console.log(error));
 };
