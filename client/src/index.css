@@ -1,0 +1,25 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff; /* Change the color */
+}
+
+.swiper-wrapper {
+  width: 100vw !important;
+}
+
+/* Add custom hover effects */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #004b81; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Customize the shape or background of the buttons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 12px 17px; /* Add padding */
+  border-radius: 100%; /* Make the buttons circular */
+}
