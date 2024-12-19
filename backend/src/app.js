@@ -9,7 +9,7 @@ const app = express();
 //global middleware configuration for cors
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://blog-app-plfx.onrender.com"],
+    origin: ["http://localhost:3000", "https://blog-app-phi-tawny.vercel.app"],
     credentials: true,
   })
 );
