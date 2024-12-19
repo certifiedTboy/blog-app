@@ -7,7 +7,12 @@ const blogRouter = require("./routes/blogRoutes");
 const app = express();
 
 //global middleware configuration for cors
-app.use(cors({ origin: ["http://localhost:3000"], credentials: true }));
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://blog-app-plfx.onrender.com"],
+    credentials: true,
+  })
+);
 
 //global middleware configuration for json data
 app.use(express.json());

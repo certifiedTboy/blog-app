@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-let baseUrl = process.env.REACT_APP_API_BASE_URL;
+let baseUrl =
+  process.env.REACT_APP_API_BASE_URL || "https://blog-app-plfx.onrender.com";
 
 export const blogApis = createApi({
   reducerPath: "blogApis",
